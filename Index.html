@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="./jquery.scrollify.js"></script>
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" media="screen" href="css/style.css" />
+    <script>
+      $(function() {
+        $.scrollify({
+          section: ".section-class-name",
+          sectionName: "section-name"
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a onClick='homeClicked("#home")' id="home" class="active">Home</a>
+      <a onClick='systemClicked("#system")' id="systems">Our Systems</a>
+      <a onClick='newsClicked("#news")' id="news">News</a>
+      <a onClick='contactClicked("#contact")' id="contact">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <div class="section-class-name even" data-section-name="home">
+      <div id="particles-js"></div>
+      <div id="home-wrapper">
+        <div id=".Absolute-Center">
+          <img id="logo" src="logo1.png" />
+          <div id="name">Virtus Tech</div>
+          <div id="slogan">
+            The future of Virtual Reality and Data combined to increase your
+            business exposure and strategy
+          </div>
+          <div id="slogan1">
+            Real time quality data should not be an aspiration but a business
+            expectation
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-class-name odd" data-section-name="system">
+      <div id="title">Our Systems</div>
+      <div class="flex-container">
+        <div id="left">
+          <h1 id="heading">S.A.R.A</h1>
+          <i class="fas fa-vr-cardboard icon"></i>
+          <p>
+            Our S.A.R.A systems uses bespoke 360 Virtual Reality video/photo
+            designed and custom to reflect your brand. We provide a unique tour
+            with enhanced features such as hot spots, providing more
+            information.
+          </p>
+          <br />
+          <i class="fas fa-search-location icon"></i>
+          <br />
+          <p>
+            The video/photos are added to any chosen platforms and are instantly
+            a proven marketing method that have the unique ability of putting
+            people within the space you want to promote, increasing trust
+            &creating new business.
+          </p>
+        </div>
+        <div id="right">
+          <h1 id="heading">M.A.H.A</h1>
+          <i class="fas fa-code-branch icon"></i>
+          <p>
+            Linking our S.A.R.A systems to the M.A.H.A systems you are provided
+            with a fully accessible customisation dashboard where data is
+            collected and continuously updated.
+          </p>
+          <br />
+
+          <i class="fas fa-chart-pie icon"></i>
+          <br />
+          <p>
+            With this data it is turned into information and presented in an
+            online report that is easy to use and interpret with all the
+            analysis completed.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="section-class-name even" data-section-name="news">
+      <div id="title">News</div>
+      <div class="flex-container news">
+        <div>
+          <a
+            href="https://www.walesonline.co.uk/business/business-news/latest-news-engine-room-welsh-15568007"
+          >
+            <img id="newsImg" src="walesOnline.jpg" />
+
+            <h1 id="heading-news">
+              Virtual reality business becomes a reality for university student
+            </h1>
+            <p id="newsContnet">
+              A Cardiff University student has launched his own virtual reality
+              company for the property and retail sector to help tackle some of
+              the challenges both industries face in the digital age.
+              <br /><br />
+
+              George Bellwood, a marketing student in his final year of studies,
+              founded Virtus Tech, a B2B firm which uses virtual and augmented
+              reality to tour retailers and view homes on the market, blending
+              real and digital experiences for customers and homebuyers...
+            </p>
+          </a>
+        </div>
+        <div>
+          <a
+            href=" https://www.cardiff.ac.uk/news/view/1409253-cardiff-entrepreneurs-vr-success"
+          >
+            <img id="newsImg" src="George-Bellwood.jpg" />
+
+            <h1 id="heading-news">
+              Cardiff entrepreneur’s VR success
+            </h1>
+            <p id="newsContnet">
+              Marketing undergraduate George Bellwood was inspired to found
+              Virtus Tech after a Cardiff Business School lecture on retail
+              industry issues left him thinking about possible solutions.
+              <br /><br />
+
+              The business-to-business company uses virtual and augmented
+              reality to allow customers and homebuyers to tour retailers and
+              view houses for sale, blending real and digital experiences. It
+              aims to help independent and franchise retailers tackle
+              competition from major high street and online shopping outlets...
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="section-class-name odd" data-section-name="contact">
+      <div id="title">Contact Us</div>
+      <div class="flex-container">
+        <div>
+          <h1 id="heading-contact">
+            Our Office
+          </h1>
+          <p id="postcode">
+            Virtus Tech <br />
+            Tramshed Tech <br />
+            Pendyris Street<br />
+            Cardiff<br />
+            CF11 6BH UK
+          </p>
+
+          <a href="https://www.linkedin.com/in/george-bellwood-606a7413b">
+            <h1 id="heading-contact">
+              Connect
+            </h1>
+            <i class="fab fa-linkedin icon"></i>
+          </a>
+        </div>
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2485.075634340346!2d-3.1877874772427592!3d51.47512598053716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e1cac44b3b4df%3A0xbc5650e2838db0a9!2sTramshed+Tech!5e0!3m2!1sen!2suk!4v1553466972075"
+            width="500px"
+            height="500px"
+            frameborder="0"
+            style="border:0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      © Copyright 2019 Virtus Tech Ltd. All rights reserved.
+    </div>
+    <script src="../particles.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+    <script src="js/lib/stats.js"></script>
+    <script>
+      var count_particles, stats, update;
+      stats = new Stats();
+      stats.setMode(0);
+      stats.domElement.style.position = "absolute";
+      stats.domElement.style.left = "0px";
+      stats.domElement.style.top = "0px";
+      update = function() {
+        stats.begin();
+        stats.end();
+        if (
+          window.pJSDom[0].pJS.particles &&
+          window.pJSDom[0].pJS.particles.array
+        ) {
+          count_particles.innerText =
+            window.pJSDom[0].pJS.particles.array.length;
+        }
+        requestAnimationFrame(update);
+      };
+      requestAnimationFrame(update);
+
+      function homeClicked() {
+        $.scrollify.move("#home");
+
+        var home = document.getElementById("home");
+        var system = document.getElementById("system");
+        var news = document.getElementById("news");
+        var contact = document.getElementById("contact");
+
+        system.classList.remove("active");
+        news.classList.remove("active");
+        contact.classList.remove("active");
+
+        home.classList.add("page");
+      }
+
+      function systemClicked() {
+        $.scrollify.move("#system");
+
+        var home = document.getElementById("home");
+        var news = document.getElementById("news");
+        var contact = document.getElementById("contact");
+
+        home.classList.remove("active");
+        news.classList.remove("active");
+        contact.classList.remove("active");
+
+        system.classList.add("page");
+      }
+
+      function newsClicked() {
+        $.scrollify.move("#news");
+
+        var home = document.getElementById("home");
+        var system = document.getElementById("system");
+        var news = document.getElementById("news");
+        var contact = document.getElementById("contact");
+
+        home.classList.remove("active");
+        system.classList.remove("active");
+        contact.classList.remove("active");
+
+        news.classList.add("page");
+      }
+
+      function contactClicked() {
+        $.scrollify.move("#contact");
+
+        var home = document.getElementById("home");
+        var system = document.getElementById("system");
+        var news = document.getElementById("news");
+        var contact = document.getElementById("contact");
+
+        home.classList.remove("active");
+        system.classList.remove("active");
+        news.classList.remove("active");
+
+        contact.classList.add("page");
+      }
+    </script>
+  </body>
+</html>

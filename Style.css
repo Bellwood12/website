@@ -1,0 +1,239 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  z-index: 1000 !important;
+  overflow: hidden;
+  background-color: #031424;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  border-bottom: solid #8eaebd 5px;
+}
+
+.topnav a {
+  display: flex;
+  justify-content: space-evenly;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.topnav a:hover {
+  background-color: #6b93a2;
+  color: white;
+}
+
+.active {
+  background-color: #8eaebd;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+#navbar {
+  background-color: #062441;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  border-bottom: solid 3px #8eaebd;
+}
+
+.demo {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+.demo > li {
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+#wrapper {
+  margin-top: 95px;
+}
+
+.even {
+  background-color: #cf6766;
+  height: 100% !important;
+}
+
+.odd {
+  background-color: #30415d;
+  height: 100% !important;
+}
+
+h1 {
+  color: white;
+  margin-top: 100px;
+}
+h2 {
+  color: white;
+  margin-top: 100px;
+}
+
+#name {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+#slogan {
+  font-size: 15px;
+}
+
+#logo {
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+#home-wrapper {
+  position: absolute;
+  color: white;
+  font-family: Monospace, Courier New;
+  text-align: center;
+  position: relative;
+  height: 100%;
+  padding-top: 20%;
+}
+
+.flex-container {
+  padding: 20% 5% 0 5%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-container > div {
+  padding: 10px;
+  width: 100px;
+  margin: 10px;
+  height: 50%;
+  width: 80%;
+  text-align: center;
+  line-height: 75px;
+}
+
+.news > div {
+  background-color: #30415d;
+  border-radius: 8px;
+  border: solid #8eaebd 5px;
+}
+
+p {
+  font-size: 10px;
+  line-height: 15px;
+  color: white;
+  text-align: justify;
+}
+
+#right {
+  border-left: solid #8eaebd 5px;
+  padding: 20px;
+}
+
+#left {
+  border-right: solid #8eaebd 5px;
+  padding: 20px;
+}
+
+.icon {
+  font-size: 50px;
+  color: white;
+}
+
+#heading {
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+#heading-news {
+  font-size: 15px;
+}
+
+#newsContnet {
+  padding: 20px;
+}
+
+#newsImg {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+a {
+  cursor: pointer;
+}
+
+#title {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  position: absolute;
+  color: white;
+  padding-top: 10%;
+}
+
+#postcode {
+  text-align: center;
+}
+
+#heading-contact {
+  color: white;
+  font-size: 30px;
+}
+
+#footer {
+  background-color: #384b6b;
+  height: 100px;
+  width: 100%;
+  bottom: 0px;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+}
