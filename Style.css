@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Amiko";
 }
 
 .topnav {
@@ -95,12 +95,42 @@ body {
   margin-top: 95px;
 }
 
-.even {
+.flex-container-home {
+  z-index: 100;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+}
+.row {
+  width: 100%;
+  margin: 10%;
+  z-index: 5;
+}
+.flex-item {
+  background-color: tomato;
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  line-height: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+}
+
+.odd {
   background-color: #cf6766;
   height: 100% !important;
 }
 
-.odd {
+.even {
   background-color: #30415d;
   height: 100% !important;
 }
@@ -108,6 +138,7 @@ body {
 h1 {
   color: white;
   margin-top: 100px;
+  text-align: center;
 }
 h2 {
   color: white;
@@ -115,23 +146,60 @@ h2 {
 }
 
 #name {
-  font-size: 40px;
+  font-size: 60px;
   margin-bottom: 20px;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
 }
 
 #slogan {
-  font-size: 15px;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+}
+
+#slogan1 {
+  margin-top: 30px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+
+  font-style: italic;
+}
+
+@media only screen and (max-width: 600px) {
+  #name {
+    font-size: 45px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  #slogan {
+    font-size: 12px;
+  }
+
+  #slogan1 {
+    margin-top: 20px;
+    font-size: 11px;
+  }
 }
 
 #logo {
-  height: 300px;
-  margin-bottom: 20px;
+  width: 100%;
+  max-height: 400px;
+}
+
+#logoContainer {
+  max-width: 600px;
+  margin: auto;
 }
 
 #home-wrapper {
   position: absolute;
   color: white;
-  font-family: Monospace, Courier New;
+
   text-align: center;
   position: relative;
   height: 100%;
@@ -160,50 +228,48 @@ h2 {
   border: solid #8eaebd 5px;
 }
 
-p {
-  font-size: 10px;
-  line-height: 15px;
-  color: white;
-  text-align: justify;
-}
-
 #right {
   border-left: solid #8eaebd 5px;
   padding: 20px;
+  height: inherit;
 }
 
 #left {
   border-right: solid #8eaebd 5px;
   padding: 20px;
+  height: inherit;
 }
 
 .icon {
   font-size: 50px;
   color: white;
+  padding-bottom: 5px !important;
 }
 
 #heading {
   font-size: 30px;
-  text-decoration: underline;
+  text-align: center;
 }
 
 #heading-news {
-  font-size: 15px;
+  font-size: 25px;
 }
 
 #newsContnet {
   padding: 20px;
+  font-size: 20px;
+  color: white;
 }
 
 #newsImg {
   height: 200px;
-  width: 200px;
-  border-radius: 50%;
+  width: 100%;
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -o-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
   filter: grayscale(100%);
+  border-radius: 5px 5px 0 0;
 }
 
 a {
@@ -213,10 +279,10 @@ a {
 #title {
   width: 100%;
   text-align: center;
-  font-size: 30px;
-  position: absolute;
+  font-size: 60px;
+  font-weight: bold;
   color: white;
-  padding-top: 10%;
+  margin-bottom: 40px;
 }
 
 #postcode {
@@ -226,6 +292,7 @@ a {
 #heading-contact {
   color: white;
   font-size: 30px;
+  margin-bottom: 20px;
 }
 
 #footer {
@@ -236,4 +303,178 @@ a {
   color: white;
   text-align: center;
   padding-top: 10px;
+}
+
+#systemsText {
+  font-size: 20px;
+  line-height: 25px;
+  color: white;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 900px) {
+  #systemsText {
+    font-size: 15px;
+    line-height: 20px;
+    color: white;
+  }
+}
+
+.lds-grid {
+  display: inline-block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+.lds-grid div {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  animation: lds-grid 1.2s linear infinite;
+}
+.lds-grid div:nth-child(1) {
+  top: 6px;
+  left: 6px;
+  animation-delay: 0s;
+}
+.lds-grid div:nth-child(2) {
+  top: 6px;
+  left: 26px;
+  animation-delay: -0.4s;
+}
+.lds-grid div:nth-child(3) {
+  top: 6px;
+  left: 45px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(4) {
+  top: 26px;
+  left: 6px;
+  animation-delay: -0.4s;
+}
+.lds-grid div:nth-child(5) {
+  top: 26px;
+  left: 26px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(6) {
+  top: 26px;
+  left: 45px;
+  animation-delay: -1.2s;
+}
+.lds-grid div:nth-child(7) {
+  top: 45px;
+  left: 6px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(8) {
+  top: 45px;
+  left: 26px;
+  animation-delay: -1.2s;
+}
+.lds-grid div:nth-child(9) {
+  top: 45px;
+  left: 45px;
+  animation-delay: -1.6s;
+}
+@keyframes lds-grid {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.lds-ripple {
+  display: inline-block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #fff;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 28px;
+    left: 28px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: -1px;
+    left: -1px;
+    width: 58px;
+    height: 58px;
+    opacity: 0;
+  }
+}
+
+.newsItem {
+  float: left;
+  width: 45%;
+  margin: 10px;
+  background-color: #8eaebd;
+  border-radius: 5px;
+  border: solid #8eaebd 5px;
+  height: 500px;
+}
+
+.contactItem {
+  float: left;
+  width: 45%;
+  margin: 10px;
+  border-radius: 5px;
+  height: 500px;
+}
+
+#newsWrapper {
+  max-width: 1000px;
+  margin: auto;
+}
+
+@media only screen and (max-width: 950px) {
+  #heading-news {
+    font-size: 20px;
+  }
+
+  #newsContnet {
+    font-size: 15px;
+  }
+
+  .newsItem {
+    width: 100%;
+    height: 350px;
+  }
+
+  .contactItem {
+    width: 100%;
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #heading-news {
+    font-size: 15px;
+  }
+
+  #newsContnet {
+    font-size: 10px;
+  }
+}
+
+#contactIcon {
+  margin-left: 25%;
 }
