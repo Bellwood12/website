@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link
-      href="https://fonts.googleapis.com/css?family=Amiko"
-      rel="stylesheet"
-    />
     <script
       src="http://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -34,24 +30,21 @@
       });
     </script>
   </head>
-
   <body>
     <div class="topnav" id="myTopnav">
       <a onClick='homeClicked("#home")' id="home" class="active">Home</a>
-      <a onClick='systemClicked("#system")' id="system">Our Systems</a>
+      <a onClick='systemClicked("#system")' id="systems">Our Systems</a>
       <a onClick='newsClicked("#news")' id="news">News</a>
       <a onClick='contactClicked("#contact")' id="contact">Contact</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>
     </div>
-    <div id="homePage" class="section-class-name even" data-section-name="home">
+    <div class="section-class-name even" data-section-name="home">
       <div id="particles-js"></div>
-      <div class="flex-container-home">
-        <div class="row">
-          <div id="logoContainer">
-            <img id="logo" src="logo1.png" />
-          </div>
+      <div id="home-wrapper">
+        <div id=".Absolute-Center">
+          <img id="logo" src="logo1.png" />
           <div id="name">Virtus Tech</div>
           <div id="slogan">
             The future of Virtual Reality and Data combined to increase your
@@ -64,154 +57,129 @@
         </div>
       </div>
     </div>
-    <div
-      id="systemPage"
-      class="section-class-name odd"
-      data-section-name="system"
-    >
-      <div class="flex-container-home">
-        <div class="row">
-          <div id="title">Our Systems</div>
-          <div id="left">
-            <h1 id="heading">S.A.R.A</h1>
-            <i class="fas fa-vr-cardboard icon"></i>
-            <p id="systemsText">
-              Our S.A.R.A systems uses bespoke 360 Virtual Reality video/photo
-              designed and custom to reflect your brand. We provide a unique
-              tour with enhanced features such as hot spots, providing more
-              information.
-            </p>
-            <br />
-            <i class="fas fa-search-location icon"></i>
-            <br />
-            <p id="systemsText">
-              The video/photos are added to any chosen platforms and are
-              instantly a proven marketing method that have the unique ability
-              of putting people within the space you want to promote, increasing
-              trust &creating new business.
-            </p>
-          </div>
-          <div id="right">
-            <h1 id="heading">M.A.H.A</h1>
-            <i class="fas fa-code-branch icon"></i>
-            <p id="systemsText">
-              Linking our S.A.R.A systems to the M.A.H.A systems you are
-              provided with a fully accessible customisation dashboard where
-              data is collected and continuously updated.
-            </p>
-            <br />
+    <div class="section-class-name odd" data-section-name="system">
+      <div id="title">Our Systems</div>
+      <div class="flex-container">
+        <div id="left">
+          <h1 id="heading">S.A.R.A</h1>
+          <i class="fas fa-vr-cardboard icon"></i>
+          <p>
+            Our S.A.R.A systems uses bespoke 360 Virtual Reality video/photo
+            designed and custom to reflect your brand. We provide a unique tour
+            with enhanced features such as hot spots, providing more
+            information.
+          </p>
+          <br />
+          <i class="fas fa-search-location icon"></i>
+          <br />
+          <p>
+            The video/photos are added to any chosen platforms and are instantly
+            a proven marketing method that have the unique ability of putting
+            people within the space you want to promote, increasing trust
+            &creating new business.
+          </p>
+        </div>
+        <div id="right">
+          <h1 id="heading">M.A.H.A</h1>
+          <i class="fas fa-code-branch icon"></i>
+          <p>
+            Linking our S.A.R.A systems to the M.A.H.A systems you are provided
+            with a fully accessible customisation dashboard where data is
+            collected and continuously updated.
+          </p>
+          <br />
 
-            <i class="fas fa-chart-pie icon"></i>
-            <br />
-            <p id="systemsText">
-              With this data it is turned into information and presented in an
-              online report that is easy to use and interpret with all the
-              analysis completed.
-            </p>
-          </div>
+          <i class="fas fa-chart-pie icon"></i>
+          <br />
+          <p>
+            With this data it is turned into information and presented in an
+            online report that is easy to use and interpret with all the
+            analysis completed.
+          </p>
         </div>
       </div>
     </div>
-    <div id="newsPage" class="section-class-name even" data-section-name="news">
-      <div class="flex-container-home">
-        <div class="row">
-          <div id="title">News</div>
-          <div id="newsWrapper">
-            <div class="newsItem">
-              <a
-                href="https://www.walesonline.co.uk/business/business-news/latest-news-engine-room-welsh-15568007"
-              >
-                <img id="newsImg" src="walesOnline.jpg" />
+    <div class="section-class-name even" data-section-name="news">
+      <div id="title">News</div>
+      <div class="flex-container news">
+        <div>
+          <a
+            href="https://www.walesonline.co.uk/business/business-news/latest-news-engine-room-welsh-15568007"
+          >
+            <img id="newsImg" src="walesOnline.jpg" />
 
-                <h1 id="heading-news">
-                  Virtual reality business becomes a reality for university
-                  student
-                </h1>
-                <p id="newsContnet">
-                  A Cardiff University student has launched his own virtual
-                  reality company for the property and retail sector to help
-                  tackle some of the challenges both industries face in the
-                  digital age.
-                  <br />
-                  <br />
-                  Read more...
-                </p>
-              </a>
-            </div>
-            <div class="newsItem">
-              <a
-                href=" https://www.cardiff.ac.uk/news/view/1409253-cardiff-entrepreneurs-vr-success"
-              >
-                <img id="newsImg" src="George-Bellwood.jpg" />
+            <h1 id="heading-news">
+              Virtual reality business becomes a reality for university student
+            </h1>
+            <p id="newsContnet">
+              A Cardiff University student has launched his own virtual reality
+              company for the property and retail sector to help tackle some of
+              the challenges both industries face in the digital age.
+              <br /><br />
 
-                <h1 id="heading-news">
-                  Cardiff entrepreneur’s VR success
-                </h1>
-                <p id="newsContnet">
-                  <br />
-                  Marketing undergraduate George Bellwood was inspired to found
-                  Virtus Tech after a Cardiff Business School lecture on retail
-                  industry issues left him thinking about possible solutions.
-                  <br />
-                  <br />
-                  Read more...
-                </p>
-              </a>
-            </div>
-          </div>
+              George Bellwood, a marketing student in his final year of studies,
+              founded Virtus Tech, a B2B firm which uses virtual and augmented
+              reality to tour retailers and view homes on the market, blending
+              real and digital experiences for customers and homebuyers...
+            </p>
+          </a>
+        </div>
+        <div>
+          <a
+            href=" https://www.cardiff.ac.uk/news/view/1409253-cardiff-entrepreneurs-vr-success"
+          >
+            <img id="newsImg" src="George-Bellwood.jpg" />
+
+            <h1 id="heading-news">
+              Cardiff entrepreneur’s VR success
+            </h1>
+            <p id="newsContnet">
+              Marketing undergraduate George Bellwood was inspired to found
+              Virtus Tech after a Cardiff Business School lecture on retail
+              industry issues left him thinking about possible solutions.
+              <br /><br />
+
+              The business-to-business company uses virtual and augmented
+              reality to allow customers and homebuyers to tour retailers and
+              view houses for sale, blending real and digital experiences. It
+              aims to help independent and franchise retailers tackle
+              competition from major high street and online shopping outlets...
+            </p>
+          </a>
         </div>
       </div>
     </div>
-    <div
-      id="contactPage"
-      class="section-class-name odd"
-      data-section-name="contact"
-    >
-      <div class="flex-container-home">
-        <div class="row">
-          <div id="title">Contact Us</div>
-          <div id="newsWrapper">
-            <div class="contactItem">
-              <h1 id="heading-contact">
-                Our Office
-              </h1>
-              <p id="newsContnet">
-                Virtus Tech
-                <br />
-                Tramshed Tech <br />
-                Pendyris Street <br />
-                Cardiff <br />
-                CF11 6BH <br />
-                UK
-              </p>
-              <h1 id="heading-contact">
-                Connect
-              </h1>
-              <a
-                id="contactIcon"
-                href="https://www.linkedin.com/in/george-bellwood-606a7413b"
-              >
-                <i class="fab fa-linkedin icon"></i>
-              </a>
-              <a
-                id="contactIcon"
-                href="mailto:robin5122d@gmail.com?Subject=Enquiry"
-                target="_blank"
-              >
-                <i class="fas fa-at icon"></i>
-              </a>
-            </div>
-            <div class="contactItem">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2485.075634340346!2d-3.1877874772427592!3d51.47512598053716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e1cac44b3b4df%3A0xbc5650e2838db0a9!2sTramshed+Tech!5e0!3m2!1sen!2suk!4v1553466972075"
-                width="100%"
-                height="100%"
-                frameborder="0"
-                style="border:0"
-                allowfullscreen
-              ></iframe>
-            </div>
-          </div>
+    <div class="section-class-name odd" data-section-name="contact">
+      <div id="title">Contact Us</div>
+      <div class="flex-container">
+        <div>
+          <h1 id="heading-contact">
+            Our Office
+          </h1>
+          <p id="postcode">
+            Virtus Tech <br />
+            Tramshed Tech <br />
+            Pendyris Street<br />
+            Cardiff<br />
+            CF11 6BH UK
+          </p>
+
+          <a href="https://www.linkedin.com/in/george-bellwood-606a7413b">
+            <h1 id="heading-contact">
+              Connect
+            </h1>
+            <i class="fab fa-linkedin icon"></i>
+          </a>
+        </div>
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2485.075634340346!2d-3.1877874772427592!3d51.47512598053716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e1cac44b3b4df%3A0xbc5650e2838db0a9!2sTramshed+Tech!5e0!3m2!1sen!2suk!4v1553466972075"
+            width="500px"
+            height="500px"
+            frameborder="0"
+            style="border:0"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
     </div>
@@ -252,39 +220,6 @@
       };
       requestAnimationFrame(update);
 
-      $(window).scroll(function() {
-        var home = document.getElementById("home");
-        var system = document.getElementById("system");
-        var news = document.getElementById("news");
-        var contact = document.getElementById("contact");
-
-        if (("scroll: ", $.scrollify.current()[0].id == "homePage")) {
-          system.classList.remove("active");
-          news.classList.remove("active");
-          contact.classList.remove("active");
-
-          home.classList.add("active");
-        } else if (("scroll: ", $.scrollify.current()[0].id == "systemPage")) {
-          home.classList.remove("active");
-          news.classList.remove("active");
-          contact.classList.remove("active");
-
-          system.classList.add("active");
-        } else if (("scroll: ", $.scrollify.current()[0].id == "newsPage")) {
-          home.classList.remove("active");
-          system.classList.remove("active");
-          contact.classList.remove("active");
-
-          news.classList.add("active");
-        } else if (("scroll: ", $.scrollify.current()[0].id == "contactPage")) {
-          home.classList.remove("active");
-          system.classList.remove("active");
-          news.classList.remove("active");
-
-          contact.classList.add("active");
-        }
-      });
-
       function homeClicked() {
         $.scrollify.move("#home");
 
@@ -297,7 +232,7 @@
         news.classList.remove("active");
         contact.classList.remove("active");
 
-        home.classList.add("active");
+        home.classList.add("page");
       }
 
       function systemClicked() {
@@ -311,7 +246,7 @@
         news.classList.remove("active");
         contact.classList.remove("active");
 
-        system.classList.add("active");
+        system.classList.add("page");
       }
 
       function newsClicked() {
@@ -326,7 +261,7 @@
         system.classList.remove("active");
         contact.classList.remove("active");
 
-        news.classList.add("active");
+        news.classList.add("page");
       }
 
       function contactClicked() {
@@ -341,7 +276,7 @@
         system.classList.remove("active");
         news.classList.remove("active");
 
-        contact.classList.add("active");
+        contact.classList.add("page");
       }
     </script>
   </body>
